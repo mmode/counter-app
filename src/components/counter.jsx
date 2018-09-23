@@ -5,19 +5,8 @@ class Counter extends Component {
     count: 0
   };
 
-  //   Binding bethod 1
-  //   constructor() {
-  //     super();
-  //     this.handleIncrement = this.handleIncrement.bind(this);
-  //   }
-
-  //   handleIncrement() {
-  //     console.log(this);
-  //   }
-
-  //   Binding bethod 2
   handleIncrement = () => {
-    console.log(this);
+    this.setState({ count: this.state.count + 1 });
   };
 
   render() {
